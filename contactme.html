@@ -26,37 +26,28 @@
 		</div>
 		
 		<!-- Content section of website layout -->
-        <table style="width:80%">
-            <caption style="font: size 30%; ;">Contact Us </caption>
-        
-            <tr>
-              <th bgcolor="gray"width=150>Name</th>
-              <th colspan="2" bgcolor="gray"width = 130 height = 30>Email Address </th>
-     
+    <div class="container">
+      <form action="action_page.php">
     
-            
-          
-            </tr>
-            <tr>
-              <td bgcolor="gray" style="font-weight: bold">MR 1</td>
-              <td colspan="2" bgcolor="gray" style="height:50px;width:50px"> mr111111@treesaving.teacher.edu.pluto</td>
-             
-     
-            </tr>
-            <tr>
-              <td bgcolor="gray" style="font-weight: bold">MR 2</td>
-              <td colspan="2" bgcolor="gray" style="height:50px;width:50px"> mr222222@treesaving.teacher.edu.pluto</td>
- 
-      
-            </tr>
-             <tr>
-             
-
-   
-            </tr>
-            
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
     
-            </table>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="PH">Philippines</option>
+    
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:20px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
     <!-- footer Section -->
         <div class="footer">
             <a href = "#">About</a>
